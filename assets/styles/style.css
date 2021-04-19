@@ -158,31 +158,47 @@ article.time{
 /* ----------ARTICLE.INGREDIENTS-------------------- */
 article.ingredients{
     font-style: normal;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 1.8rem;
     line-height: 2.4rem;
 }
-.ingredients h2{
-    padding-bottom: 13px;
+article.ingredients h2{
+    padding-bottom: 3.5%;
 }
 .ingredients p{
+    font-family: 'Playfair Display', serif;
+    color: var(--gray1);
     font-style: italic;
+    font-weight: normal;
     font-size: 1.6rem;
     line-height: 2.1rem;
 }
-.ingredients table{
+.ingredients ul{
     min-width: 100%;
     width: auto;
     margin: 3.5% auto;
-}
-tbody tr td:first-of-type{
-    background-color: yellow;
-}
-tbody tr td:last-of-type{
     width: 85.6%;
     font-size:1.4rem ;
     line-height: 2.2rem;
     font-weight: normal;
+}
+.ingredients span{
+    font-weight: bold;
+}
+.ingredients ul li:first-of-type{
+    width: 15%;
+    background-color: yellow;
+}
+.ingredients ul:last-of-type{
+    width: 85.6%;
+    font-size:1.4rem ;
+    line-height: 2.2rem;
+    font-weight: normal;
+} 
+
+/* ----------ARTICLE.CHESECAKE------------- */
+.cheesecake{
+
 }
 /* ----------ARTICLE.INSTRUCTIONS---------- */
 .instructions {
@@ -194,17 +210,26 @@ tbody tr td:last-of-type{
 .instructions span{
 font-weight: bold;
 }
-table.stepByStep tr{
-    margin-bottom: 20%;
+.instructions>div>ul{
+  display: flex;
+  margin-bottom: 5%;
 }
+.instructions ul li{
+    margin-right: 5%;
+}
+.instructions ul>li:first-of-type{
+    width: 15%;
+    height: 15%;
+    padding: 2%;
+    background-color: orange;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+
 
 footer{
     color:#eb008a;
 }
-footer a,
-footer p{
-    text-align: center;
-    text-decoration: #eb008a;
 
-    
-}
