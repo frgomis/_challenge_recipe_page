@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: var(--MyBorder1); */
 }
 html{
     font-size: 62.5%;
@@ -44,15 +45,17 @@ img{
 ul{
     list-style: none;
 }
-
 .container {
+    border: var(--MyBorder1);
     position: relative;
-    max-width: 376px;
+    min-width: 376px;
+    max-width: 768px;
     max-height: 3740px;
     box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 1.5%;
+    padding: 3.5%;
     margin: 0 auto;
+ 
 }
 /* ------------------- */
 header{
@@ -95,6 +98,7 @@ img{
 /* -------- MAIN - MAIN ----------- */
 main{
     width: 100%;
+    margin: 0 auto;
 }
 .yields{
     display: flex;
@@ -185,8 +189,8 @@ article.time{
     font-weight: normal;
 }
 .ingredients ul li:first-child{
-    height: 3.5%;
-    padding: 3.5%;
+    height: 10px;
+    padding: 10px;
     border: var(--gray3) solid 1px;
     border-radius: 4px;
     margin-right: 2.5%;
@@ -218,11 +222,11 @@ cheesecake span{
     margin-bottom: 10%;
 }
 .cheesecake>div ul {
-    display:flex
+    display:flex;
 }
 .cheesecake ul li:first-child{
-    height: 3.5%;
-    padding: 3.5%;
+    height: 10px;
+    padding: 10px;
     border: var(--gray3) solid 1px;
     border-radius: 4px;
     margin-right: 2.5%;
@@ -253,17 +257,61 @@ font-weight: bold;
     margin-right: 5%;
 }
 .instructions ul>li:first-of-type{
-    height: 3.5%;
-    padding: 3.5%;
+    height: 13px;
+    height: 32px;
+    padding: 3%;
     background-color: orange;
     color:white;
     font-weight: bold;
     text-align: center;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
 }
-
 footer{
     color:#eb008a;
     text-align: center;
 }
+/* FORMAT DESKTOP - FORMAT DESKTOP - FORMAT DESKTOP */
+@media screen and (min-width:775px) {
+    body {
+        background-color: rgb(255, 213, 219);
+    }
 
+    container {
+        min-width: 775px;
+        max-width: 1440px;
+        position: relative;
+    }
+
+    .yields_time {
+        position: absolute;
+        width: 216px;
+        height: 367px;
+        left: 63%;
+        top: 20%;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+    .yields{
+        display: flex;
+        justify-content: center;
+        margin: 25% 0;
+    }
+
+    article.time {
+        display: block;
+        justify-content: center;
+
+    }
+    .time>div{
+        margin-bottom: 25%;
+        justify-content: 0;
+    }
+
+    
+
+ 
+    
+}
