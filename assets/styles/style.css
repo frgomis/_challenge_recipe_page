@@ -33,7 +33,7 @@ a{
 h1, h2, h3,
 h4, h5, h6{
     font-family: 'Playfair Display', sans-serif;
-    color: var(--black);
+    color: var(--GRAY1);
     font-weight: bold;
     margin-bottom: 2.5%;
 }
@@ -46,7 +46,6 @@ ul{
 }
 
 .container {
-    border: var(--MyBorder2);
     position: relative;
     max-width: 376px;
     max-height: 3740px;
@@ -95,13 +94,12 @@ img{
 }
 /* -------- MAIN - MAIN ----------- */
 main{
-    border: var(--MyBorder1);
     width: 100%;
 }
 .yields{
     display: flex;
     align-self: stretch;
-    margin-bottom: 8%;
+    margin-bottom: 7%;
 }
 .yields img{
     width: 22px;
@@ -127,7 +125,7 @@ article.time{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    margin-bottom: 7%;
 }
 .time div{
     display: flex;
@@ -145,7 +143,6 @@ article.time{
     font-weight: bold;
     font-size: 0.8rem;
     line-height: 10px;
-    /* identical to box height */
     text-transform: uppercase;
 }
 .time ul li:last-child {
@@ -156,14 +153,14 @@ article.time{
     line-height: 1.2rem;
 }
 /* ----------ARTICLE.INGREDIENTS-------------------- */
-article.ingredients{
+.ingredients{
     font-style: normal;
     /* font-weight: bold; */
     font-size: 1.8rem;
     line-height: 2.4rem;
 }
-article.ingredients h2{
-    padding-bottom: 3.5%;
+.ingredients h2{
+    margin-bottom: 3.5%;
 }
 .ingredients p{
     font-family: 'Playfair Display', serif;
@@ -172,41 +169,76 @@ article.ingredients h2{
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 2.1rem;
-}
-.ingredients ul{
-    min-width: 100%;
-    width: auto;
-    margin: 3.5% auto;
-    width: 85.6%;
-    font-size:1.4rem ;
-    line-height: 2.2rem;
-    font-weight: normal;
+    margin-bottom: 5%;
 }
 .ingredients span{
     font-weight: bold;
 }
-.ingredients ul li:first-of-type{
-    width: 15%;
-    background-color: yellow;
+.ingredients>div{
+    margin-bottom: 2.3%;
+}
+.ingredients>div:last-of-type{
+    margin-bottom: 8%;
+}
+.ingredients div ul{
+    display: flex;
+    font-weight: normal;
+}
+.ingredients ul li:first-child{
+    height: 3.5%;
+    padding: 3.5%;
+    border: var(--gray3) solid 1px;
+    border-radius: 4px;
+    margin-right: 2.5%;
 }
 .ingredients ul:last-of-type{
-    width: 85.6%;
     font-size:1.4rem ;
     line-height: 2.2rem;
     font-weight: normal;
 } 
-
-/* ----------ARTICLE.CHESECAKE------------- */
+/* ----------ARTICLE.CHEESECAKE------------- */
 .cheesecake{
-
+    font-style: normal;
+    line-height: 2.4rem;
+}
+.cheesecake h2{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 5%;
+}
+cheesecake span{
+    font-weight: bold;
+}
+.cheesecake>div {
+    margin-bottom: 2.5%;
+}
+.cheesecake>div:last-of-type{
+    margin-bottom: 10%;
+}
+.cheesecake>div ul {
+    display:flex
+}
+.cheesecake ul li:first-child{
+    height: 3.5%;
+    padding: 3.5%;
+    border: var(--gray3) solid 1px;
+    border-radius: 4px;
+    margin-right: 2.5%;
+}
+.cheesecake em{
+    font-weight: 700;
 }
 /* ----------ARTICLE.INSTRUCTIONS---------- */
 .instructions {
-    display: block;
-    font-size: 1.6rem;
-    line-height: 150%;
+    line-height: 2.4rem;
 }
-
+.instructions h2 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 5%;
+}
 .instructions span{
 font-weight: bold;
 }
@@ -214,13 +246,15 @@ font-weight: bold;
   display: flex;
   margin-bottom: 5%;
 }
+.instructions>div:last-of-type{
+    margin-bottom: 25%;
+  }
 .instructions ul li{
     margin-right: 5%;
 }
 .instructions ul>li:first-of-type{
-    width: 15%;
-    height: 15%;
-    padding: 2%;
+    height: 3.5%;
+    padding: 3.5%;
     background-color: orange;
     color:white;
     font-weight: bold;
@@ -228,8 +262,8 @@ font-weight: bold;
     border-radius: 4px;
 }
 
-
 footer{
     color:#eb008a;
+    text-align: center;
 }
 
