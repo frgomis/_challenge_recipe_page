@@ -3,12 +3,12 @@
 <h1 align="center">Recipe blog challenge By FG</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   Solution for a challenge from  <a href="http://www.devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://https://frgomis.github.io/_challenge_recipe_page/">
+    <a href="https://frgomis.github.io/_challenge_recipe_page/">
       Demo
     </a>
     <span> | </span>
